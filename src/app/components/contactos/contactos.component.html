@@ -1,0 +1,9 @@
+
+<h4>Estos son mis datos de contacto:</h4>
+<div class="contact-card" *ngFor="let contacto of listado">
+  <div class="contact-info">
+    <h6>{{ contacto.name }}</h6>
+    <p><strong>Email:</strong> {{ contacto.email }}</p>
+    <p><strong>Teléfono:</strong> {{ contacto.telefono }}</p>
+  </div>
+</div>

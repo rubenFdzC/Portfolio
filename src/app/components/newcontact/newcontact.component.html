@@ -1,0 +1,23 @@
+<!-- <h4>Aquí te dejo un formulario para dejarme tus datos con la oferta :</h4>
+<input #name placeholder="nombre" type="text"/>
+<input #email placeholder="email" type="text"/>
+<input #telefono placeholder="telefono" type="text"/>
+<input #coments placeholder="Comentarios" type="text"/>
+<button (click)="sendNewContact({name:name.value , email:email.value, telefono: telefono.value })">Añadir</button> -->
+
+<div class="form-container">
+    <h4>Aquí te dejo un formulario para dejarme tus datos y esperar mi respuesta lo antes posible:</h4>
+    <div class="form-group">
+      <input #name placeholder="Nombre" type="text" />
+    </div>
+    <div class="form-group">
+      <input #email placeholder="Email" type="text" />
+    </div>
+    <div class="form-group">
+      <input #telefono placeholder="Teléfono" type="text" />
+    </div>
+    <div class="form-group">
+      <input #comentarios placeholder="Comentarios" type="text" />
+    </div>
+    <button (click)="sendNewContact({name:name.value , email:email.value, telefono: telefono.value, comentarios: comentarios.value })">Añadir</button>
+  </div> 
